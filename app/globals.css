@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #f6f5ef;
+  --foreground: #000000;
+  --card: #ffffff;
+  --card-foreground: #000000;
+  --primary: #df4f62;
+  --primary-foreground: #ffffff;
+  --secondary: #fad068;
+  --secondary-foreground: #000000;
+  --accent: #699ad4;
+  --accent-foreground: #ffffff;
+  --muted: #e5e5e5;
+  --muted-foreground: #676767;
+  --border: #cbcbcb;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+}
+
+@layer components {
+  .tag {
+    @apply bg-muted text-muted-foreground text-xs px-3 py-1 rounded-full;
+  }
+}
